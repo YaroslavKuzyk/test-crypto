@@ -1,0 +1,100 @@
+@import 'variables';
+@import 'fonts';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--color-PrimaryText);
+    font-size: 14px;
+    font-family: Inter;
+}
+
+.border-top {
+    border-top: 1px solid var(--color-DisableText);
+}
+
+.border-bottom {
+    border-bottom: 1px solid var(--color-DisableText);
+}
+
+.border-left {
+    border-left: 1px solid var(--color-DisableText);
+}
+
+.border-right {
+    border-right: 1px solid var(--color-DisableText);
+}
+
+.border {
+    border: 1px solid var(--color-DisableText);
+}
+
+.color-red {
+    color: var(--color-danger);
+}
+
+.color-green {
+    color: var(--color-success);
+}
+
+.currencies-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid var(--color-DisableText);
+    border-radius: 5px;
+
+    input {
+        width: 100%;
+        border: none;
+        outline: none;
+        background: none;
+        color: var(--color-PrimaryText);
+    }
+}
+
+.button {
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: var(--color-PrimaryText);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-green {
+    background: var(--color-success);
+}
+
+.button-red {
+    background: var(--color-danger);
+}
+
+.table {
+    width: 100%;
+
+    td {
+        padding: 8px 8px;
+    }
+
+    thead td {
+        color: var(--color-DisableText);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    cursor: pointer;
+
+    &:hover {
+        background: #555;
+    }
+}
+
